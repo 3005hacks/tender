@@ -5,6 +5,7 @@
  	font-family: 'CooperHewitt', 'Chivo', sans-serif;
  	color: #FFFFFF;
  	margin-bottom: 0%;
+ 	padding-top: 4%
  }
 
 .info{
@@ -12,6 +13,7 @@
  	font-size: 18px;
  	font-family: 'CooperHewitt', 'Chivo', sans-serif;
  	color: #000000;
+ 	padding-bottom: 4%;
 }
 
 .main_gif{
@@ -22,6 +24,7 @@
 
 .top-banner{
 	background-color: #D65930;
+	margin = 4%
 
 }
 
