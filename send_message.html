@@ -19,24 +19,21 @@
           <marquee class = "ticker" behavior="scroll" direction="left">We don't discriminate here. This isn't just for tenders, it's also for wings. Hell, we'll even take a nugget! On Tender, you can delve into your saltiest, crunchiest desires.  Chicken is BAE. Have you ever wanted a hot, steaming, slice of roast chicken? We got you.  Fried chicken, baked chicken, chicken marsala, chicken fries, chicken rings, chicken halal, chicken pizza, chicken flavored ramen.   YASSSSSSS, taste it, TASTE IT. Tender is your gateway to all that is "amor pollo". Explore your wild side! Try some spicy stuff. Try some flaming hot wings that literally burn all of your taste buds off. YEAH! Do that. We want you to have fun. Love, Tender. </marquee>
     </div>
 
-    <div class = "main_gif">
-          <img class = "chicken_gif" src="img/chicken.gif" width = 250 height = 250 padding-top = "0" frameBorder="0" />
-          
-    </div class = "button" text-align = center>
-          <a  href="https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&es_th=1&ie=UTF-8#safe=off&q=find+chicken" class="push_button">
-            Tap For a Blind Date :)
-          </a>
-            
-    <div>
 
-    </div>
+    <div id = "send_number_form" text-align: "center">
+        <h1 text-align: "center"> Send Chicken to a Friend!</h1>
+        <input type="text" name="phone number" value="1234445656"/>
+        <a  href="https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&es_th=1&ie=UTF-8#safe=off&q=find+chicken" class="push_button">
+            Send!
+        </a>
+    </div>  
 
     <footer>
       <div>
-        <p class = "copyright" width = "50%">    &copy; Copyright 2015.      The Whoadies</p>  
+        <p class = "copyright">    &copy; Copyright 2015.      The Whoadies</p>  
       </div>
       <div>
-        <p id = "location" class = "copyright" width = "50%">    location </p>
+        <p id = "location" class = "copyright">    location </p>
         <button onClick = "showPosition(getLocation())">Get Location</button>  
       </div>
 
@@ -57,7 +54,7 @@
       "<br>Longitude: " + position.coords.longitude; 
   }
 </script>
-  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=places"></script>
+
   </body> 
 
 
