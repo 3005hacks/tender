@@ -20,7 +20,10 @@ function getNearbySearches(){
 	};
 }
 
-function getTopSearch
+function getTopSearch(){
+	var x = document.getElementById("location");
+	x.innerHTML = getNearbySearches().name;
+}
 
 function callback(results, status) {
   if (status == google.maps.places.PlacesServiceStatus.OK) {
