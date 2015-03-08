@@ -54,8 +54,6 @@
           x.innerHTML = "Geolocation is not supported by this browser.";
       }
   }
-  var lng = getLocation().coords.longitude;
-  var lat = getLocation().coords.latitude;
 
   function showPosition(position) {
       x.innerHTML = "Latitude: " + position.coords.latitude + 
@@ -70,7 +68,7 @@ function getNearbySearches(){
   
 
   var request = {
-    location: {lat: getLocation().coords.latitude; lat, lng: getLocation().coords.longitude},
+    location: {lat: getLocation().coords.latitude, lng: getLocation().coords.longitude},
     radius: '1760',
     openNow: true,
     type: ['restaurant']
