@@ -59,8 +59,10 @@
     function showPosition(position) {
       x.innerHTML = "Latitude: " + position.coords.latitude + 
       "<br>Longitude: " + position.coords.longitude; 
+</script>
 
-  var service;
+<script type="text/javascript">
+var service;
 
 function getNearbySearches(){
   service = new google.maps.places.PlacesService(map);
