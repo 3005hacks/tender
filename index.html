@@ -23,10 +23,10 @@
           <img class = "chicken_gif" src="img/chicken.gif" width = 250 height = 250 padding-top = "0" frameBorder="0" />
           
     </div class = "button" text-align = center>
-          <a  href="https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&es_th=1&ie=UTF-8#safe=off&q=find+chicken" class="push_button">
+          <a  href="" class="push_button">
             Tap For a Blind Date :)
           </a>
-            
+             
     <div>
 
     </div>
@@ -43,6 +43,7 @@
     </footer>
 
   <script type="text/javascript" src="JS/geolocation.js"></script>
+
   <script>
   var x = document.getElementById("location");
     function getLocation() {
@@ -52,12 +53,17 @@
           x.innerHTML = "Geolocation is not supported by this browser.";
       }
   }
+  var lng = getLocation().coords.longitude;
+  var lat = getLocation().coords.latitude;
     function showPosition(position) {
       x.innerHTML = "Latitude: " + position.coords.latitude + 
       "<br>Longitude: " + position.coords.longitude; 
   }
 </script>
+
   <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=places"></script>
+
+
   </body> 
 
 
