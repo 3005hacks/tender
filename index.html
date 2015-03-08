@@ -70,7 +70,7 @@ function getNearbySearches(){
   
 
   var request = {
-    location: {lat: lat, lng: lng},
+    location: {lat: getLocation().coords.latitude; lat, lng: getLocation().coords.longitude;},
     radius: '1760',
     openNow: true,
     type: ['restaurant']
