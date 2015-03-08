@@ -76,11 +76,9 @@ function getNearbySearches(){
 
   var results = service.nearbySearch(request, callback);
 
-  for (var i = 0; i < results.length; i++) {
     next = results[0];
     alert(next.name);
     return next;
-  };
 }
 
 function getTopSearch(){
