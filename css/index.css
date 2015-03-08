@@ -27,8 +27,6 @@
 	position: relative;
 	margin-top: 3%;
 	padding-bottom: 0%;
-	background-image: url("img/kanye-brits.jpg");
-	background-repeat: repeat;
 }
 
 .top-banner{
@@ -41,7 +39,7 @@
 html, body{
 	padding: 0;
 	margin: 0;
-	background-image: url("img/rain.gif");
+	background-image: url("/Users/davidsmart/Desktop/Tender/img/rain.gif");
 	background-repeat: repeat;
 }
 
