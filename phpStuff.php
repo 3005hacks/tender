@@ -23,12 +23,12 @@
   $client = new Services_Twilio($AccountSid, $AuthToken);
 
   /* Your Twilio Number or Outgoing Caller ID */
-  $from = '6314173161';
+  $from = '+16314173161';
 
   // make an associative array of server admins. Feel free to change/add your 
   // own phone number and name here.
   $people = array(
-    "9086357678" => "Amol",
+    "+19086357678" => "Amol",
   );
 
   // Iterate over all admins in the $people array. $to is the phone number, 
@@ -40,3 +40,14 @@
     echo "Sent message to $name";
   }
 ?>
+
+<?php
+// Get the PHP helper library from twilio.com/docs/php/install
+require_once('/path/to/twilio-php/Services/Twilio.php'); // Loads the library
+ 
+// Your Account Sid and Auth Token from twilio.com/user/account
+$sid = "ACae316fac018bbadcdfef6bce6eea7e40"; 
+$token = "{{ 264541c0f23357675d11ea26bdcc707a }}"; 
+$client = new Services_Twilio($sid, $token);
+ 
+$client->account->messages->sendMessage("+16314173161", "+19086357678", "Jenny please?! I love you <3", "http://www.example.com/hearts.png");
