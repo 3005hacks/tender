@@ -10,7 +10,6 @@
   </head>
   <body>
 
-    <script type="text/javascript" src="js/client.js"></script>
 
     <link rel="stylesheet" href="css/index.css" />
 
@@ -32,28 +31,20 @@
           .tftable tr:hover {background-color:#ffffff;}
         </style>
 
-        <table class="tftable" border="1" max-width = "1267px" margin-bottom = "5%" padding-bottom = "5%">
-          <tr><td height = "400px"><div id = "giphyme"></div></td><td height = "400px"> <div id = "giphyme2"></div></td><td height = "400px"><div id = "giphyme3"></div> </td></tr>
-          <tr><td height = "400px"><div id = "giphyme4"></div> </td><td height = "400px"> <div id = "giphyme5"></div></td><td height = "400px"><div id = "giphyme6"></div> </td></tr>
-          <tr><td height = "400px"> <div id = "giphyme7"></div></td><td height = "400px"> <div id = "giphyme8"></div></td><td height = "400px"> <div id = "giphyme9"></div></td></tr>
-          <tr margin-bottom = "5%" padding-bottom = "5%"><td height = "400px"><div id = "giphyme10"></div> </td><td height = "400px"> <div id = "giphyme11"></div></td><td height = "400px"><div id = "giphyme12"></div> </td></tr>
-        </table>
+        <div id = "giphyme" width = "500"  height = "328" max-width = "500" max-height = "328" padding-top = "20%" margin-top = '20%'></div>
 
-        </div class = "cutlet-button" text-align = "center" >
-          <a id = "populate_button" href="" class="push_button">
-            Find More Cutlets!
-          </a>
-          <div>
 
     </div>
 
-    <footer>
-      <div>
+      </div class = "cutlet-button" text-align = "center" margin-top = "5%" padding-top = "5%">
+          <button id = "cutlet-button" text-align: "center" class="push_button" margin-top = "5%" padding-top = "5%">
+            Find More Cutlets!
+          </button>
+          <div>
+
+      <div id = "footer">
         <p class = "copyright" width = "50%">    &copy; Copyright 2015.      The Whoadies</p>  
       </div>
-    
-
-    </footer>
 
   <!--<script type="text/javascript" src="JS/geolocation.js"></script>-->
   <!--code for location and searches-->
@@ -116,56 +107,20 @@ function callback(results, status) {
 }
 </script>
 
+    <script type="text/javascript" src="js/client.js"></script>
+
+
   <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=places"></script>
 
 
-
+<footer>
+      <div>
+        <p class = "copyright" width = "50%">    &copy; Copyright 2015.      The Whoadies</p>  
+      </div>
+</footer>
   </body> 
 
 
 
 
 </html>
-
-<?php
-  /* Send an SMS using Twilio. You can run this file 3 different ways:
-   *
-   * - Save it as sendnotifications.php and at the command line, run 
-   *        php sendnotifications.php
-   *
-   * - Upload it to a web host and load mywebhost.com/sendnotifications.php 
-   *   in a web browser.
-   * - Download a local server like WAMP, MAMP or XAMPP. Point the web root 
-   *   directory to the folder containing this file, and load 
-   *   localhost:8888/sendnotifications.php in a web browser.
-   */
-  // Include the PHP Twilio library. You need to download the library from 
-  // twilio.com/docs/libraries, and move it into the folder containing this 
-  // file.
-  require "Services/Twilio.php";
-  
-  // Set our AccountSid and AuthToken from twilio.com/user/account
-  $AccountSid = "ACae316fac018bbadcdfef6bce6eea7e40";
-  $AuthToken = "264541c0f23357675d11ea26bdcc707a";
-
-  // Instantiate a new Twilio Rest Client
-  $client = new Services_Twilio($AccountSid, $AuthToken);
-
-  /* Your Twilio Number or Outgoing Caller ID */
-  $from = '6314173161';
-
-  // make an associative array of server admins. Feel free to change/add your 
-  // own phone number and name here.
-  $people = array(
-    "9086357678" => "Amol",
-  );
-
-  // Iterate over all admins in the $people array. $to is the phone number, 
-  // $name is the user's name
-  foreach ($people as $to => $name) {
-    // Send a new outgoing SMS */
-    $body = "This shit better work";
-    $client->account->sms_messages->create($from, $to, $body);
-    echo "Sent message to $name";
-  }
-?>
