@@ -103,7 +103,7 @@ footer{
 	margin bottom: 20%;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 0;
+	margin-top: 2%;
 	border-radius:5px;
 	border:solid 1px #D94E3B;
 	background:#D65930;
@@ -148,4 +148,14 @@ h1{
 
 p{
 	font-family: 'Handlee', cursive;
+}
+
+.hot{
+	text-align: "center"; 
+	margin: "auto";
+	padding: "auto";
+	 width: "500";
+	 height: "328px";
+	 max-width: "500px"; 
+	 max-height: "328px";
 }
