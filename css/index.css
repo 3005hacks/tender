@@ -44,6 +44,7 @@ html, body{
 	padding: 0;
 	margin: 0;
 	background-color: #000000;
+	color: white;
 	
 }
 
@@ -66,7 +67,7 @@ html, body{
 }
 
 .ticker{
-	font-family: 'CooperHewitt', 'Chivo', sans-serif;
+	font-family: 'Handlee', cursive;
 	background-color: #D65930;
 	padding-top: 0.5%;
 	padding-bottom: 0.5%;
@@ -78,7 +79,7 @@ footer{
 	padding-bottom: 0.01%;
 	text-align: left;
  	font-size: 18px;
- 	font-family: 'CooperHewitt', 'Chivo', sans-serif;
+ 	font-family: 'Handlee', cursive;
  	color: #FFFFFF;
  	vertical-align: text-bottom;
  	margin-top: 5%;
@@ -89,7 +90,7 @@ footer{
 	vertical-align: center;
 	padding-top: 1%;
 	padding-left: 1%;
-	font-family: 'CooperHewitt', 'Chivo', sans-serif;
+	font-family: 'Handlee', cursive;
 }
 
 .push_button{
@@ -106,7 +107,7 @@ footer{
 	border:solid 1px #D94E3B;
 	background:#D65930;
 	text-align:center;
-	font-family: 'CooperHewitt', 'Chivo', sans-serif;
+	font-family: 'Handlee', cursive;
 	padding:20px 20px;
 	vertical-align: center;
 	
