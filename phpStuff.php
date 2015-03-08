@@ -13,7 +13,7 @@
   // Include the PHP Twilio library. You need to download the library from 
   // twilio.com/docs/libraries, and move it into the folder containing this 
   // file.
-  require "Services/Twilio.php";
+  require "twilio-php-master/Services/Twilio.php";
   
   // Set our AccountSid and AuthToken from twilio.com/user/account
   $AccountSid = "ACae316fac018bbadcdfef6bce6eea7e40";
