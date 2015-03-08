@@ -132,28 +132,26 @@ function callback(results, status) {
   require "Services/Twilio.php";
   
   // Set our AccountSid and AuthToken from twilio.com/user/account
-  $AccountSid = "ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
-  $AuthToken = "YYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY";
+  $AccountSid = "ACae316fac018bbadcdfef6bce6eea7e40";
+  $AuthToken = "264541c0f23357675d11ea26bdcc707a";
 
   // Instantiate a new Twilio Rest Client
   $client = new Services_Twilio($AccountSid, $AuthToken);
 
   /* Your Twilio Number or Outgoing Caller ID */
-  $from = 'NNNNNNNNNN';
+  $from = '6314173161';
 
   // make an associative array of server admins. Feel free to change/add your 
   // own phone number and name here.
   $people = array(
     "9086357678" => "Amol",
-    "4158675310" => "Helen",
-    "4158675311" => "Virgil",
   );
 
   // Iterate over all admins in the $people array. $to is the phone number, 
   // $name is the user's name
   foreach ($people as $to => $name) {
     // Send a new outgoing SMS */
-    $body = "Bad news $name, the server is down and it needs your help";
+    $body = "This shit better work";
     $client->account->sms_messages->create($from, $to, $body);
     echo "Sent message to $name";
   }
