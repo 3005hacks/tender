@@ -133,3 +133,9 @@ footer{
 .cutlet-button{
 	margin-top: 20%;
 }
+
+.menu{
+	color: white;
+	text-decoration: none;
+	position: relative;
+}

@@ -1,5 +1,5 @@
 
-document.getElementById("populate_button").onclick = function(){
+document.getElementById("populate_button").onclick = function go(){
 
   q = "chicken wings"; // search query
 
