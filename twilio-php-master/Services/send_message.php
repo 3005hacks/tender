@@ -13,14 +13,25 @@
  
     // Step 1: Download the Twilio-PHP library from twilio.com/docs/libraries, 
     // and move it into the folder containing this file.
-    require "Services/Twilio.php";
+    require('./Twilio.php');
  
     // Step 2: set our AccountSid and AuthToken from www.twilio.com/user/account
     $AccountSid = "AC2727ce935aa207c8c9963dad66a39973";
     $AuthToken = "ACae316fac018bbadcdfef6bce6eea7e40";
  
     // Step 3: instantiate a new Twilio Rest Client
-    $client = new Services_Twilio($AccountSid, $AuthToken);
+    $http = new Services_Twilio_TinyHttp(
+    'https://api.twilio.com',
+    array('curlopts' => array(
+        CURLOPT_SSL_VERIFYPEER => true,
+        CURLOPT_SSL_VERIFYHOST => 1,
+    )));
+
+    //should be 2
+
+    // add semicolon after ()
+
+    $client = new Services_Twilio($sid, $token, "2015-03-08", $http);
  
     // Step 4: make an array of people we know, to send them a message. 
     // Feel free to change/add your own phone number and name here.
@@ -36,7 +47,8 @@
  
         // Step 6: Change the 'From' number below to be a valid Twilio number 
         // that you've purchased, or the (deprecated) Sandbox number
-            "631-417-3161", 
+          //631-417-3161
+            "+16314173161", 
  
             // the number we are sending to - Any phone number
             $number,
