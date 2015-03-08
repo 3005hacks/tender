@@ -23,7 +23,7 @@
           <img class = "chicken_gif" src="img/chicken.gif" width = 250 height = 250 padding-top = "0" frameBorder="0" />
           
     </div class = "button" text-align = center>
-          <a href="" onClick = "getTopSearch()" class="push_button">
+          <a href="https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&es_th=1&ie=UTF-8#safe=off&q=find+chicken"  class="push_button">
             Tap For a Blind Date :)
           </a>
              
@@ -61,18 +61,25 @@
 
 <script type="text/javascript">
 var service;
+var map;
 
 function getNearbySearches(){
-  service = build('books', 'v1', developerKey=AIzaSyAL316Oq4kQcD5KuB5ycwXxkCc6L5YAedw);
+  var pyrmont = new google.maps.LatLng(40.8089162, -73.9599777);
   
 
+  map = new google.maps.Map(document.getElementById('map'), {
+      center: pyrmont,
+      zoom: 15
+    });
+
   var request = {
-    location: {lat: getLocation().coords.latitude, lng: getLocation().coords.longitude},
+    location: pyrmont,
     radius: '1760',
     openNow: true,
     type: ['restaurant']
   };
 
+  service = new google.maps.places.PlacesService(map);
   service.nearbySearch(request, callback);
 
     next = results[0];
