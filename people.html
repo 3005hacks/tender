@@ -9,6 +9,9 @@
 
   </head>
   <body>
+
+    <script type="text/javascript" src="js/client.js"></script>
+
     <link rel="stylesheet" href="css/index.css" />
 
     <div class = "top"> 
@@ -29,19 +32,18 @@
           .tftable tr:hover {background-color:#ffffff;}
         </style>
 
-        <table class="tftable" border="1">
-          <tr><th>Header 1</th><th>Header 2</th><th>Header 3</th></tr>
-          <tr><td><div id = "giphyme"></div></td><td> <div id = "giphyme"></div></td><td><div id = "giphyme"></div> </td></tr>
-          <tr><td><div id = "giphyme"></div> </td><td> <div id = "giphyme"></div></td><td><div id = "giphyme"></div> </td></tr>
-          <tr><td> <div id = "giphyme"></div></td><td> <div id = "giphyme"></div></td><td> <div id = "giphyme"></div></td></tr>
-          <tr><td><div id = "giphyme"></div> </td><td> <div id = "giphyme"></div></td><td><div id = "giphyme"></div> </td></tr>
+        <table class="tftable" border="1" max-width = "1267px" margin-bottom = "5%" padding-bottom = "5%">
+          <tr><td height = "400px"><div id = "giphyme"></div></td><td height = "400px"> <div id = "giphyme2"></div></td><td height = "400px"><div id = "giphyme3"></div> </td></tr>
+          <tr><td height = "400px"><div id = "giphyme4"></div> </td><td height = "400px"> <div id = "giphyme5"></div></td><td height = "400px"><div id = "giphyme6"></div> </td></tr>
+          <tr><td height = "400px"> <div id = "giphyme7"></div></td><td height = "400px"> <div id = "giphyme8"></div></td><td height = "400px"> <div id = "giphyme9"></div></td></tr>
+          <tr margin-bottom = "5%" padding-bottom = "5%"><td height = "400px"><div id = "giphyme10"></div> </td><td height = "400px"> <div id = "giphyme11"></div></td><td height = "400px"><div id = "giphyme12"></div> </td></tr>
         </table>
 
-    </div>
-          
-    </div class = "button" text-align = center>
-        
-    <div>
+        </div class = "cutlet-button" text-align = "center" >
+          <a id = "populate_button" href="" class="push_button">
+            Find More Cutlets!
+          </a>
+          <div>
 
     </div>
 
@@ -56,6 +58,7 @@
   <!--<script type="text/javascript" src="JS/geolocation.js"></script>-->
   <!--code for location and searches-->
   <script>
+
   var x = document.getElementById("location");
   function getLocation() {
       if (navigator.geolocation) {
@@ -115,7 +118,6 @@ function callback(results, status) {
 
   <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=places"></script>
 
-  <script type="text/javascript" src="client.js"></script>
 
 
   </body> 
