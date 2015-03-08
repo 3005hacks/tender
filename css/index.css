@@ -39,7 +39,7 @@
 html, body{
 	padding: 0;
 	margin: 0;
-	background-image: url("/Users/davidsmart/Desktop/Tender/img/rain.gif");
+	background-image: url("rain.gif");
 	background-repeat: repeat;
 }
 
