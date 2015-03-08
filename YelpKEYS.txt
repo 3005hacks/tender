@@ -1,0 +1,12 @@
+API v2.0
+Consumer Key:	lkmpngFNAbdRK4b8LmDb_g
+Consumer Secret:	8EYgokqqGWnDvvigyp41r2mdRq8
+Token:	FQf9q2Wc3u6QowY1ywDkl7YLazHZQ3BJ
+Token Secret:	IFxwy7Md1lWT4gqQ3igZUmZ9Suo
+Generate new API v2.0: token/secret
+
+API v1.0 (deprecated)
+YWSID
+Key	Y9U5lQ8KBWpwobrT3FgTDA
+
+http://api.yelp.com/v2/search?term=food&location=San+Francisco&oauth_consumer_key=lkmpngFNAbdRK4b8LmDb_g&oauth_token=FQf9q2Wc3u6QowY1ywDkl7YLazHZQ3BJ&oauth_signature_method=HMAC-SHA1&oauth_signature=IFxwy7Md1lWT4gqQ3igZUmZ9Suo&oauth_timestamp=1425782970477&oauth_nonce=jaj
