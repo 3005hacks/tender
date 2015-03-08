@@ -71,10 +71,10 @@ function getNearbySearches(){
 
   var request = {
     location: {lat: lat, lng: lng},
-    radius: 1760,
-    keyword "chicken",
+    radius: '1760',
+    keyword ['chicken'],
     openNow: true,
-    type: "restaurant"
+    type: ['restaurant']
   };
 
   var results = service.nearbySearch(request, callback);
