@@ -21,4 +21,13 @@ document.getElementById("populate_button").onclick = function go(){
   };
  
   request.send();
+
+  document.getElementById("meet").innerHTML = names();
+}
+
+function names(){
+ var n = Math.floor((Math.random() * 10) + 1);
+ var names = ['Brianna', 'Harriet', 'Walter', 'David', 'Larry', 'Josh', 'Sophie', 'Sarah', 'Mehar', 'Doug', 'Chicken'];
+ return names[n];
+
 }
