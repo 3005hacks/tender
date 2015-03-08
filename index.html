@@ -47,7 +47,7 @@
   <!--code for location and searches-->
   <script>
   var x = document.getElementById("location");
-    function getLocation() {
+  function getLocation() {
       if (navigator.geolocation) {
           navigator.geolocation.getCurrentPosition(showPosition);
       } else {
@@ -56,10 +56,11 @@
   }
   var lng = getLocation().coords.longitude;
   var lat = getLocation().coords.latitude;
-    function showPosition(position) {
+
+  function showPosition(position) {
       x.innerHTML = "Latitude: " + position.coords.latitude + 
-      "<br>Longitude: " + position.coords.longitude; 
-</script>
+      "<br>Longitude: " + position.coords.longitude;}
+  </script>
 
 <script type="text/javascript">
 var service;
