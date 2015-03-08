@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tender</title>
+    <link href='http://fonts.googleapis.com/css?family=Varela+Round|Handlee' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Bangers' rel='stylesheet' type='text/css'>
+
+    <title>Tender</title>
+
+  </head>
+  <body>
+    <link rel="stylesheet" href="css/index.css" />
+
+    <div class = "top"> 
+          <header class = "top-banner">
+            <h1 class = "title" >T E N D E R</h1>
+            <h1 class = "info">Find The Hottest Chicken in Your Area!</h1>
+          </header>
+
+          <marquee class = "ticker" behavior="scroll" direction="left">We don't discriminate here. This isn't just for tenders, it's also for wings. Hell, we'll even take a nugget! On Tender, you can delve into your saltiest, crunchiest desires.  Chicken is BAE. Have you ever wanted a hot, steaming, slice of roast chicken? We got you.  Fried chicken, baked chicken, chicken marsala, chicken fries, chicken rings, chicken halal, chicken pizza, chicken flavored ramen.   YASSSSSSS, taste it, TASTE IT. Tender is your gateway to all that is "amor pollo". Explore your wild side! Try some spicy stuff. Try some flaming hot wings that literally burn all of your taste buds off. YEAH! Do that. We want you to have fun. Love, Tender. </marquee>
+    </div>
+
+    <div>
+        <style type="text/css">
+          .tftable {font-size:12px;color:#333333;width:100%;border-width: 1px;border-color: #729ea5;border-collapse: collapse;}
+          .tftable th {font-size:12px;background-color:#acc8cc;border-width: 1px;padding: 8px;border-style: solid;border-color: #729ea5;text-align:left;}
+          .tftable tr {background-color:#d4e3e5;}
+          .tftable td {font-size:12px;border-width: 1px;padding: 8px;border-style: solid;border-color: #729ea5;}
+          .tftable tr:hover {background-color:#ffffff;}
+        </style>
+
+        <table class="tftable" border="1">
+          <tr><th>Header 1</th><th>Header 2</th><th>Header 3</th></tr>
+          <tr><td><div id = "giphyme"></div></td><td> <div id = "giphyme"></div></td><td><div id = "giphyme"></div> </td></tr>
+          <tr><td><div id = "giphyme"></div> </td><td> <div id = "giphyme"></div></td><td><div id = "giphyme"></div> </td></tr>
+          <tr><td> <div id = "giphyme"></div></td><td> <div id = "giphyme"></div></td><td> <div id = "giphyme"></div></td></tr>
+          <tr><td><div id = "giphyme"></div> </td><td> <div id = "giphyme"></div></td><td><div id = "giphyme"></div> </td></tr>
+        </table>
+
+    </div>
+          
+    </div class = "button" text-align = center>
+        
+    <div>
+
+    </div>
+
+    <footer>
+      <div>
+        <p class = "copyright" width = "50%">    &copy; Copyright 2015.      The Whoadies</p>  
+      </div>
+    
+
+    </footer>
+
+  <!--<script type="text/javascript" src="JS/geolocation.js"></script>-->
+  <!--code for location and searches-->
+  <script>
+  var x = document.getElementById("location");
+  function getLocation() {
+      if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(showPosition);
+      } else {
+          x.innerHTML = "Geolocation is not supported by this browser.";
+      }
+  }
+
+  function showPosition(position) {
+      x.innerHTML = "Latitude: " + position.coords.latitude + 
+      "<br>Longitude: " + position.coords.longitude;}
+  </script>
+
+<script type="text/javascript">
+var service;
+var map;
+
+function getNearbySearches(){
+  var pyrmont = new google.maps.LatLng(40.8089162, -73.9599777);
+  
+
+  map = new google.maps.Map(document.getElementById('map'), {
+      center: pyrmont,
+      zoom: 15
+    });
+
+  var request = {
+    location: pyrmont,
+    radius: '1760',
+    openNow: true,
+    type: ['restaurant']
+  };
+
+  service = new google.maps.places.PlacesService(map);
+  service.nearbySearch(request, callback);
+
+    next = results[0];
+    alert(next.name);
+    return next;
+}
+
+function getTopSearch(){
+  var x = document.getElementById("location");
+  x.innerHTML = getNearbySearches().name;
+}
+
+function callback(results, status) {
+  if (status == google.maps.places.PlacesServiceStatus.OK) {
+    for (var i = 0; i < results.length; i++) {
+      var place = results[i];
+      createMarker(results[i]);
+    }
+  }
+}
+</script>
+
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=places"></script>
+
+  <script type="text/javascript" src="client.js"></script>
+
+
+  </body> 
+
+
+
+
+</html>
+
+<?php
+  /* Send an SMS using Twilio. You can run this file 3 different ways:
+   *
+   * - Save it as sendnotifications.php and at the command line, run 
+   *        php sendnotifications.php
+   *
+   * - Upload it to a web host and load mywebhost.com/sendnotifications.php 
+   *   in a web browser.
+   * - Download a local server like WAMP, MAMP or XAMPP. Point the web root 
+   *   directory to the folder containing this file, and load 
+   *   localhost:8888/sendnotifications.php in a web browser.
+   */
+  // Include the PHP Twilio library. You need to download the library from 
+  // twilio.com/docs/libraries, and move it into the folder containing this 
+  // file.
+  require "Services/Twilio.php";
+  
+  // Set our AccountSid and AuthToken from twilio.com/user/account
+  $AccountSid = "ACae316fac018bbadcdfef6bce6eea7e40";
+  $AuthToken = "264541c0f23357675d11ea26bdcc707a";
+
+  // Instantiate a new Twilio Rest Client
+  $client = new Services_Twilio($AccountSid, $AuthToken);
+
+  /* Your Twilio Number or Outgoing Caller ID */
+  $from = '6314173161';
+
+  // make an associative array of server admins. Feel free to change/add your 
+  // own phone number and name here.
+  $people = array(
+    "9086357678" => "Amol",
+  );
+
+  // Iterate over all admins in the $people array. $to is the phone number, 
+  // $name is the user's name
+  foreach ($people as $to => $name) {
+    // Send a new outgoing SMS */
+    $body = "This shit better work";
+    $client->account->sms_messages->create($from, $to, $body);
+    echo "Sent message to $name";
+  }
+?>
