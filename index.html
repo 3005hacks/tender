@@ -74,7 +74,7 @@ function getNearbySearches(){
     type: ['restaurant']
   };
 
-  var results = service.nearbySearch(request, callback);
+  service.nearbySearch(request, callback);
 
     next = results[0];
     alert(next.name);
