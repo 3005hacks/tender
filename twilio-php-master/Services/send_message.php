@@ -9,7 +9,7 @@
      * - Download a local server like WAMP, MAMP or XAMPP. Point the web root 
      *   directory to the folder containing this file, and load 
      *   localhost:8888/sendnotifications.php in a web browser.
-     */
+     *(should go here)
  
     // Step 1: Download the Twilio-PHP library from twilio.com/docs/libraries, 
     // and move it into the folder containing this file.
@@ -24,7 +24,7 @@
     'https://api.twilio.com',
     array('curlopts' => array(
         CURLOPT_SSL_VERIFYPEER => true,
-        CURLOPT_SSL_VERIFYHOST => 1,
+        CURLOPT_SSL_VERIFYHOST => 2,
     )));
 
     //should be 2
@@ -59,4 +59,24 @@
  
         // Display a confirmation message on the screen
         echo "Sent message to $name";
-    }
+        */
+
+// Get the PHP helper library from twilio.com/docs/php/install
+require_once('./Twilio.php'); // Loads the library
+ 
+// Your Account Sid and Auth Token from twilio.com/user/account
+$sid = "AC3fb4f76aa9a5a8d34993e48c4285ca45"; 
+$token = "{{ 34c2973d61cbf2fd3ffa7b6fe7d8ad01 }}"; 
+$client = new Services_Twilio($sid, $token);
+ // from 779 to 8152106069
+$client->account->messages->sendMessage("+17792056193", "+18152106069", "Jenny please?! I love you <3");
+
+?>
+
+<?php
+    header("content-type: text/xml");
+    echo "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n";
+?>
+<Response>
+    <Message>Hello, Mobile Monkey</Message>
+</Response>
