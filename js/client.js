@@ -10,7 +10,7 @@ document.getElementById("populate_button").onclick = function go(){
     if (request.status >= 200 && request.status < 400){
       data = JSON.parse(request.responseText).data.image_url;
       console.log(data);
-      document.getElementById("giphyme").innerHTML = '<center><img STYLE = "text-align: center; max-height: 328px;" src = "'+data+'"  title="GIF via Giphy"></center>';
+      document.getElementById("giphyme").innerHTML = '<center><img STYLE = "text-align: center; vertical-align: center; max-height: 328px;" src = "'+data+'"  title="GIF via Giphy"></center>';
     } else {
       console.log('reached giphy, but API returned an error');
      }
