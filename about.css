@@ -76,3 +76,10 @@ footer{
 	padding-left: 1%;
 	font-family: 'CooperHewitt', 'Chivo', sans-serif;
 }
+
+.about_text{
+	text-decoration: none; 
+	text-indent: 50px; 
+	font-size: 15px;
+
+}

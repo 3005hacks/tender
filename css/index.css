@@ -89,6 +89,12 @@ a{
 	font-family: 'Handlee', cursive;
 }
 
+.about_text{
+	text-decoration: none; 
+	text-indent: 50px; 
+	font-size: 15px;
+
+}
 
 /* Buttons */
 .push_button{
