@@ -26,8 +26,8 @@ document.getElementById("populate_button").onclick = function go(){
 }
 
 function names(){
- var n = Math.floor((Math.random() * 13) + 1);
- var names = ['Brianna', 'Harriet', 'Walter', 'David', 'Larry', 'Josh', 'Sophie', 'Sarah', 'Mehar', 'Doug', 'Chicken', 'Amol', 'Adrian', 'Amy'];
+ var n = Math.floor((Math.random() * 14) + 1);
+ var names = ['Brianna', 'Harriet', 'Walter', 'David', 'Larry', 'Josh', 'Sophie', 'Sarah', 'Mehar', 'Doug', 'Chicken', 'Amol', 'Adrian', 'Amy', 'Miles'];
  return names[n];
 
 }

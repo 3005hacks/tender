@@ -2,54 +2,56 @@
 <html>
   <head>
     <title>Tender</title>
+
+    <!--Import Fonts-->
     <link href='http://fonts.googleapis.com/css?family=Varela+Round|Handlee' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Bangers' rel='stylesheet' type='text/css'>
-
-    <title>Tender</title>
-
+    <link href='http://fonts.googleapis.com/css?family=Bangers' rel='stylesheet' type='text/css'/>
   </head>
+
   <body>
     <link rel="stylesheet" href="css/index.css" />
 
-    <div class = "top"> 
-           <a STYLE="text-decoration: none" href="index.html">
-          <header class = "top-banner">
-            <h1 class = "title" text-decoration: "none">T E N D E R</h1>
-            <h1 class = "info">Find The Hottest Chicken in Your Area!</h1>
-          </header>
+    <!--The Visual Header of The Page-->
+    <div class = "top">
+
+          <a STYLE="text-decoration: none" href="index.html">
+            <header class = "top-banner">
+              <h1 class = "title" text-decoration: "none">T E N D E R</h1>
+              <h1 class = "info">Find The Hottest Chicken in Your Area!</h1>
+            </header>
           </a>
 
+          <!--The Scrolling Ticker-->
           <marquee class = "ticker" behavior="scroll" direction="left">We don't discriminate here. This isn't just for tenders, it's also for wings. Hell, we'll even take a nugget! On Tender, you can delve into your saltiest, crunchiest desires.  Chicken is BAE. Have you ever wanted a hot, steaming, slice of roast chicken? We got you.  Fried chicken, baked chicken, chicken marsala, chicken fries, chicken rings, chicken halal, chicken pizza, chicken flavored ramen.   YASSSSSSS, taste it, TASTE IT. Tender is your gateway to all that is "amor pollo". Explore your wild side! Try some spicy stuff. Try some flaming hot wings that literally burn all of your taste buds off. YEAH! Do that. We want you to have fun. Love, Tender. </marquee>
     </div>
 
     <div>
-    <div class = "main_gif">
+      <!--The Middle, GIF and Location-->
+      <div class = "main_gif">
           <img class = "chicken_gif" src="img/chicken.gif" width = "250" height = "250" padding-top = "0" frameBorder="0" />
           <p id = "location" text-align = "center" class = "copyright" width = "50%" color = "white">  location </p>
           <button onClick = "showPosition(getLocation())" font-family: "'Handlee', cursive";>Get Location</button>  
-      </div>
+        </div>
     </div>
-          
-    </div class = "button" text-align = "center">
+    
+    <!--The Blind Date Button and People Link-->      
+    <div class = "button" text-align = "center">
           <a href="https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&es_th=1&ie=UTF-8#safe=off&q=find+chicken"  class="push_button">
             Tap For a Blind Date ;)
           </a>
           <br></br>
           <center><a class = "menu" text-align = "center" margin-top = "20%" vertical-alignment = "center" href="people.html">Meet Single Poultry Near You</a></center>
-    <div>
-
     </div>
 
+    <!--The Visual Footer-->
     <footer>
       <div>
         <a STYLE="text-decoration: none";"color: white" href="https://www.youtube.com/watch?v=vh6Aj8lUzC8"><p class = "copyright" width = "50%">    &copy; Copyright 2015.      The Whoadies</p></a> 
       </div>
-    
-
     </footer>
 
-  <!--<script type="text/javascript" src="JS/geolocation.js"></script>-->
-  <!--code for location and searches-->
+  
+  <!--JS Code for location and searches-->
   <script>
   var x = document.getElementById("location");
   function getLocation() {
@@ -65,6 +67,7 @@
       "<br>Longitude: " + position.coords.longitude;}
   </script>
 
+<!--JS Code for Getting Nearby Restauraunts-->
 <script type="text/javascript">
 var service;
 var map;
@@ -108,13 +111,10 @@ function callback(results, status) {
 }
 </script>
 
+<!--Importing JS Files-->
   <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=places"></script>
-
   <script type="text/javascript" src="client.js"></script>
 
-  </body> 
-
-
-
+</body> 
 
 </html>
