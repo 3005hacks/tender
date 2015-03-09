@@ -9,7 +9,6 @@
 .info{
 	text-align: center;
  	font-size: 18px;
- 	font-family: 'Handlee', cursive;
  	color: #FFFFFF;
  	padding-bottom: 4%;
 }
@@ -29,11 +28,11 @@ html, body{
 	padding: 0;
 	margin: 0;
 	background-color: #000000;
+	font-family: 'Handlee', cursive;
 	
 }
 
 .ticker{
-	font-family: 'CooperHewitt', 'Chivo', sans-serif;
 	background-color: #D65930;
 	padding-top: 0.5%;
 	padding-bottom: 0.5%;
@@ -44,7 +43,6 @@ html, body{
 	text-align: center;
 	text-indent: 50px;
 	word-spacing: 1% ;
-	font-family: 'CooperHewitt', 'Chivo', sans-serif;
 	font-size: 20px;
 	color: white;
 	padding-left: 15%;
@@ -54,7 +52,6 @@ html, body{
 
 .Developers {
 	text-align: left;
-	font-family: 'CooperHewitt', 'Chivo', sans-serif;
 	font-size: 18px;
 	color: white;
 }
@@ -64,7 +61,6 @@ footer{
 	padding-bottom: 0.01%;
 	text-align: left;
  	font-size: 18px;
- 	font-family: 'CooperHewitt', 'Chivo', sans-serif;
  	color: #FFFFFF;
  	vertical-align: text-bottom;
  	margin-top: 5%;
@@ -74,7 +70,6 @@ footer{
 	vertical-align: center;
 	padding-top: 1%;
 	padding-left: 1%;
-	font-family: 'CooperHewitt', 'Chivo', sans-serif;
 }
 
 .about_text{
