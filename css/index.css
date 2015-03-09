@@ -155,13 +155,12 @@ a{
 
 /* Picture Holder for People Page */
 .hot{
-	text-align: "center"; 
-	margin: "auto";
-	padding: "auto";
-	 width: "500";
-	 height: "328px";
-	 max-width: "500px"; 
-	 max-height: "328px";
+	text-align: center; 
+	margin: auto;
+	padding: auto;
+	 width: auto;
+	 height: 328px;
+	 max-height: 328px
 }
 
 
