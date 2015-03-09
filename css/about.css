@@ -40,16 +40,23 @@ html, body{
 	color: white;
 }
 
-.AboutTender {
+.AboutTender{
 	text-align: center;
+	text-indent: 50px;
+	word-spacing: 1% ;
 	font-family: 'CooperHewitt', 'Chivo', sans-serif;
 	font-size: 20px;
+	color: white;
+	padding-left: 15%;
+	padding-right: 15%;
+
 }
 
 .Developers {
 	text-align: left;
 	font-family: 'CooperHewitt', 'Chivo', sans-serif;
 	font-size: 18px;
+	color: white;
 }
 
 footer{
@@ -68,4 +75,12 @@ footer{
 	padding-top: 1%;
 	padding-left: 1%;
 	font-family: 'CooperHewitt', 'Chivo', sans-serif;
+}
+
+.about_text{
+	text-decoration: none; 
+	text-indent: 50px; 
+	font-size: 15px;
+	color: white;
+
 }
